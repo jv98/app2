@@ -37,9 +37,9 @@ export default function App() {
     <View style={styles.container}>
       <Image source={logo} style={styles.logo}/>
 
-      <Text  style={styles.instructions}> för att dela ett foto från din telefon med en vän klicka på knappen under </Text>
+      <Text  style={styles.instructions}> för att se en bild klicka på knappen under </Text>
       <TouchableOpacity onPress={openImagePickerAsync} style={styles.button}>
-        <Text style={styles.buttonText}>Pick a photo</Text>
+        <Text style={styles.buttonText}>Välje en bild</Text>
       </TouchableOpacity>
      
     </View>
@@ -68,11 +68,16 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     padding: 20,
     borderRadius: 5,
-    marginTop: 200,
+    marginTop: 20,
   },
   buttonText: {
     fontSize: 20,
     color: '#fff',
     
   }, 
+  thumbnail: {
+    width: 300,
+    height: 300,
+    resizeMode: "contain"
+  }
 });
