@@ -28,7 +28,7 @@ export default function App() {
       <View style={styles.container}>
         <Image
           source={{ uri: selectedImage.localUri }}
-          style={styles.thumbnail}
+          style={styles.Bild}
         />
       </View>
     );
@@ -37,9 +37,9 @@ export default function App() {
     <View style={styles.container}>
       <Image source={logo} style={styles.logo}/>
 
-      <Text  style={styles.instructions}> för att se en bild klicka på knappen under </Text>
-      <TouchableOpacity onPress={openImagePickerAsync} style={styles.button}>
-        <Text style={styles.buttonText}>Välje en bild</Text>
+      <Text  style={styles.info}> för att se en bild klicka på knappen under </Text>
+      <TouchableOpacity onPress={openImagePickerAsync} style={styles.Knap}>
+        <Text style={styles.KnapText}>Välje en bild</Text>
       </TouchableOpacity>
      
     </View>
@@ -54,28 +54,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 305,
+    width: 310,
     height: 250,
     marginBottom: 10,
   },
-  instructions: {
+  info: {
     color: '#888',
     fontSize: 15,
     textAlign: 'center',
     marginHorizontal: 25,
   },
-  button: {
+  Knap: {
     backgroundColor: "blue",
     padding: 20,
     borderRadius: 5,
     marginTop: 20,
   },
-  buttonText: {
+  KnapText: {
     fontSize: 20,
     color: '#fff',
     
   }, 
-  thumbnail: {
+  Bild: {
     width: 300,
     height: 300,
     resizeMode: "contain"
