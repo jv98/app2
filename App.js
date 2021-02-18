@@ -37,7 +37,7 @@ export default function App() {
     <View style={styles.container}>
       <Image source={logo} style={styles.logo}/>
 
-      <Text  style={styles.info}> för att se en bild klicka på knappen under </Text>
+      <Text  style={styles.info}> för att se en bild klicka på knappen under och välje en bild </Text>
       <TouchableOpacity onPress={openImagePickerAsync} style={styles.Knap}>
         <Text style={styles.KnapText}>Välje en bild</Text>
       </TouchableOpacity>
